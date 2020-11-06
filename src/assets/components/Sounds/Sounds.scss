@@ -1,0 +1,20 @@
+.sc {
+  // .sc__sounds
+  &__sounds {
+    display: grid;
+    row-gap: 10px;
+    li {
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.5s ease 0s;
+      @media (min-width: 991.98px) {
+        &:hover {
+          color: rgb(0, 255, 0);
+        }
+      }
+      &._active {
+        color: rgb(0, 255, 0);
+      }
+    }
+  }
+}

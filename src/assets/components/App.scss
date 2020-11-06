@@ -1,0 +1,37 @@
+.page {
+  // .page__sc
+  &__sc {
+    min-height: 100vh;
+    padding: 100px 0px;
+    background: #333;
+  }
+}
+.sc {
+  // .sc__container
+  &__container {
+  }
+  // .sc__body
+  &__body {
+    display: grid;
+    row-gap: 50px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 20px;
+    background: rebeccapurple;
+    position: relative;
+  }
+  // .sc__items
+  &__items {
+    display: grid;
+    row-gap: 50px;
+  }
+  // .sc__row
+  &__row {
+    display: grid;
+    grid-template: auto / 4fr 6fr;
+  }
+  // .sc__title
+  &__title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,39 @@
+.sc {
+  // .sc__duration
+  &__duration {
+    display: grid;
+    row-gap: 10px;
+    span {
+      font-size: 1.2rem;
+    }
+    input {
+      appearance: none;
+      border-radius: 50px;
+      background: rgb(0, 94, 0);
+      &::-webkit-slider-thumb {
+        background: orange;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        appearance: none;
+        cursor: pointer;
+      }
+      &::-moz-range-thumb {
+        background: orange;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        appearance: none;
+        cursor: pointer;
+      }
+      &::-ms-thumb {
+        background: orange;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        appearance: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

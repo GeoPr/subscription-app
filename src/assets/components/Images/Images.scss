@@ -1,0 +1,52 @@
+.sc {
+  // .sc__images
+  &__images {
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    gap: 10px;
+  }
+  // .sc__img
+  &__img {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    &._active {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    @media (min-width: 991.98px) {
+      &:hover {
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    &::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: green;
+      background: rgba($color: #000, $alpha: 0.5);
+      font-size: 5rem;
+      transition: all 0.5s ease 0s;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
